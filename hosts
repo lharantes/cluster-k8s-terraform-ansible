@@ -1,0 +1,13 @@
+[master]
+vm-master.eastus2.cloudapp.azure.com
+
+[workers]
+vm-worker01.eastus2.cloudapp.azure.com
+vm-worker02.eastus2.cloudapp.azure.com
+
+[linux:children]
+master
+workers
+
+[all:vars]
+user_azure=azadmin
